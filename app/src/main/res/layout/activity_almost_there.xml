@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".AlmostActivity">
+
+    <TextView
+        android:id="@+id/almostthere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Almost There"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/almostthere"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Thank you for registering with us. One more"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/checkemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thankyou"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_light"
+        android:text="step, you need check your email"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/activate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkemail"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_light"
+        android:text="to activate your account"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activate"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnverify"
+        android:text="Verify"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/white"
+        android:onClick="pindahVerify"/>
+</RelativeLayout>

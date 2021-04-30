@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BloodShare</string>
+    <string-array name="golongan_darah">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB</item>
+        <item>Tidak Diketahui</item>
+    </string-array>
+    <string-array name="reshus_darah">
+        <item>Reshus</item>
+        <item>Positif</item>
+        <item>Negatif</item>
+        <item>Tidak Diketahui</item>
+    </string-array>
+    <string-array name="pekerjaan">
+        <item>Job</item>
+        <item>Pelajar</item>
+        <item>Mahasiswa</item>
+        <item>Karyawan</item>
+        <item>Tidak Diketahui</item>
+    </string-array>
+</resources>

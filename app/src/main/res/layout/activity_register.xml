@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_header">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_header_back"
+            android:onClick="pindahLogin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </Toolbar>
+
+    <EditText
+        android:id="@+id/regis_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Username"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_username"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Email"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <EditText
+        android:id="@+id/regis_notelp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Phone Number"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <RadioGroup
+        android:id="@+id/regis_jk"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/regis_notelp"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jk_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="Male"
+            android:textColor="#BFAFB2"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+
+        <RadioButton
+            android:id="@+id/jk_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:text="Female"
+            android:textColor="#BFAFB2"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/regis_golonganDarah"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_jk"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="#BFAFB2"
+        android:entries="@array/golongan_darah" />
+
+    <Spinner
+        android:id="@+id/regis_reshus"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_jk"
+        android:layout_marginLeft="188dp"
+        android:backgroundTint="#BFAFB2"
+        android:entries="@array/reshus_darah" />
+
+    <EditText
+        android:id="@+id/regis_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_reshus"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Password"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <EditText
+        android:id="@+id/regis_retypePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Retype Password"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <RadioGroup
+        android:id="@+id/regis_tipe"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/regis_retypePassword"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tipe_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="Personal"
+            android:textColor="#BFAFB2"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+
+        <RadioButton
+            android:id="@+id/tipe_organisasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="Organization"
+            android:textColor="#BFAFB2"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/regis_pekerjaan"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_tipe"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#BFAFB2"
+        android:entries="@array/pekerjaan" />
+
+    <EditText
+        android:id="@+id/regis_homeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_pekerjaan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Home Address"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/regis_homeAddress"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:drawableRight="@drawable/ic_blood_needed_location"
+        android:backgroundTint="#BFAFB2"
+        android:hint="Default Location"
+        android:paddingBottom="15dp"
+        android:textColorHint="#BFAFB2" />
+    
+    <CheckBox
+        android:id="@+id/agreement"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agree with Terms and Conditions"/>
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnRegistrasi"
+        android:layout_below="@id/agreement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Register"
+        android:textColor="@color/background"
+        android:background="@drawable/btnregistrasi"
+        android:onClick="pindahAlmost"/>
+
+
+</RelativeLayout>

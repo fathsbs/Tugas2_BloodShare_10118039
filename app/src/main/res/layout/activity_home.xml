@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_header_profile">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_side_menu"
+            android:layout_marginBottom="100dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            android:layout_marginLeft="275dp"
+            android:layout_marginBottom="100dp"/>
+
+    </Toolbar>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/fatahillah" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Fatahillah Satria Bima Seno"
+        android:textColor="@color/background" />
+
+    <TextView
+        android:id="@+id/golonganDarah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Blood Type : B"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/golonganDarah"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/kuantitas_darah_beri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="2dp"
+        android:text="75"
+        android:textColor="@color/background"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/darah_beri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuantitas_darah_beri"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="2dp"
+        android:text="Blood Give"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/kuantitas_darah_terima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/kuantitas_darah_beri"
+        android:text="100"
+        android:textColor="@color/background"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/darah_terima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuantitas_darah_terima"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/darah_beri"
+        android:text="Blood Received"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/kuantitas_terima_kasih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/kuantitas_darah_terima"
+        android:text="330"
+        android:textColor="@color/background"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/terimakasih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuantitas_darah_terima"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/darah_terima"
+        android:text="Thanks"
+        android:textSize="9sp" />
+
+    <View
+        android:id="@+id/seperator2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/darah_terima"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/seperator2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_search_donor" />
+
+    <TextView
+        android:id="@+id/search_donor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="5dp"
+        android:text="Search Donor"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/near"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_donor"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="3dp"
+        android:text="Search Donor near you"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/near"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_message" />
+
+    <TextView
+        android:id="@+id/message_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="5dp"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/new_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_judul"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="3dp"
+        android:text="5 New Messages"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/blood_needed"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/seperator2"
+        android:layout_toRightOf="@id/search"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_blood_needed" />
+
+    <TextView
+        android:id="@+id/blood_needed_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blood_needed"
+        android:layout_toRightOf="@id/search_donor"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Blood Needed"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/user_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blood_needed_judul"
+        android:layout_toRightOf="@id/near"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="3dp"
+        android:text="4 Users need blood"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/donor_history"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/user_need"
+        android:layout_toRightOf="@id/search"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_donor_history" />
+
+    <TextView
+        android:id="@+id/donor_history_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donor_history"
+        android:layout_toRightOf="@id/search_donor"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Donor History"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donor_history_judul"
+        android:layout_toRightOf="@id/near"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="3dp"
+        android:text="5 gives, 2 received"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>
